@@ -25,7 +25,7 @@ function metro() {
         console.log($count);
         $count += $addNum;
       } else {
-        stop();
+        $count = 0;
       }
     }, 1000);
   }
