@@ -11,6 +11,7 @@ author, and this description to match your project!
 let $count = 0;
 let $addNum = 1;
 let $control = 8;
+let counting;
 
 $(document).ready(function () {
 
@@ -19,10 +20,16 @@ $(document).ready(function () {
 });
 
 function metro() {
-  let counting = setInterval(()=> {
-      console.log($count);
+  counting = setInterval(()=> {
       if ($count <= $control) {
+        console.log($count);
         $count += $addNum;
+      } else {
+        stop();
       }
     }, 1000);
   }
+
+function stop() {
+  clearInterval(counting);
+}
