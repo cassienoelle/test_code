@@ -21,8 +21,8 @@ $(document).ready(function () {
 
 function metro() {
   counting = setInterval(()=> {
+      console.log($count);
       if ($count <= $control) {
-        console.log($count);
         $count += $addNum;
       } else {
         $count = 0;
