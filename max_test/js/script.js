@@ -19,9 +19,10 @@ $(document).ready(function () {
 });
 
 function metro() {
-  console.log($count);
-  // setInterval(()=> {
-  //   console.log(count);
-  //   count += addNum;
-  // }, 1000);
+  while ($count < 10) {
+    setInterval(()=> {
+      console.log(count);
+      count += addNum;
+    }, 1000);
+  }
 }
