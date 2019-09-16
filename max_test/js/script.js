@@ -21,8 +21,8 @@ $(document).ready(function () {
 function metro() {
   while ($count < 10) {
     setInterval(()=> {
-      console.log(count);
-      count += addNum;
+      console.log($count);
+      $count += $addNum;
     }, 1000);
   }
 }
