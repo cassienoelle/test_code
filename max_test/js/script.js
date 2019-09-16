@@ -20,11 +20,12 @@ $(document).ready(function () {
 
 function metro() {
   let counting = setInterval(()=> {
+    if ($count <= $control) {
       console.log($count);
       $count += $addNum;
+    } else {
+      clearInterval(counting);
+    }
     }, 1000);
-  }
-  if ($count > 10) {
-    clearInterval(counting);
   }
 }
