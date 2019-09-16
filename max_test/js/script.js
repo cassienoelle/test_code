@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 });
 
-function metro {
+function metro() {
   console.log($count);
   // setInterval(()=> {
   //   console.log(count);
